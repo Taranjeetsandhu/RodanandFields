@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite parallel="tests" name="RegSuite">
+<test name="1stTime">
+<parameter name="browser" value="firefox"/>
+<classes>
+<class name="MavenRodanFieldsPackage.RodanFieldsTest"/>
+</classes>
+</test>
+<test name="2ndTime">
+<parameter name="browser" value="chrome"/>
+<classes>
+<class name="MavenRodanFieldsPackage.RodanFieldsTest"/>
+</classes>
+</test>
+</suite>
