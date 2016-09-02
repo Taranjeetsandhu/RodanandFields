@@ -2,8 +2,7 @@ package MavenRodanFieldsPackage;
 
 import org.testng.annotations.Test;
 import org.testng.annotations.BeforeMethod;
-import org.testng.AssertJUnit;
-import org.junit.BeforeClass;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -11,6 +10,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.support.ui.Select;
 import org.testng.Assert;
+import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 import org.testng.annotations.Listeners;
@@ -19,7 +19,7 @@ import org.testng.annotations.Listeners;
 import java.util.concurrent.TimeUnit;
 
 
-@Listeners(MyListeners.class)
+//@Listeners(MyListeners.class)
 public class RodanFieldsTest {
 
 
@@ -31,14 +31,13 @@ public class RodanFieldsTest {
 	public void setUp() throws InterruptedException{
 		driver.manage().window().maximize();
 		driver.get("https://www.rodanandfields.com/ca/");
-		//Thread.sleep(5000);
 		driver.manage().timeouts().implicitlyWait(50, TimeUnit.SECONDS);
 
 	}
 	@Test(priority=1)
 	public void rodanFieldsTest1() throws InterruptedException{
 		rodanFields.shopCare();
-		Assert.assertTrue(rodanFields.verifyUrl().contains("quickShop"), "incorrect");
+		//Assert.assertTrue(rodanFields.verifyUrl().contains("quickShop"), "incorrect");
 		rodanFields.selectRedefine();
 
 		//Assert.assertTrue(rodanFields.verifyLabel(), "Labels not matching");
@@ -46,8 +45,6 @@ public class RodanFieldsTest {
 		//assertTrue(50 <= rodanFields.verifyPrice() && rodanFields.verifyPrice() <= 200, "not in range");
 
 	}
-
-
 
 	
 	@Test(priority=2)

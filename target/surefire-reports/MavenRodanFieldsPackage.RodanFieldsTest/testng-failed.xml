@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite verbose="0" name="Failed suite [MavenRodanFieldsPackage.RodanFieldsTest]">
+  <test name="Command line test(failed)">
+    <classes>
+      <class name="MavenRodanFieldsPackage.RodanFieldsTest">
+        <methods>
+          <include name="rodanFieldsTest2"/>
+          <include name="rodanFieldsTest1"/>
+        </methods>
+      </class> <!-- MavenRodanFieldsPackage.RodanFieldsTest -->
+    </classes>
+  </test> <!-- Command line test(failed) -->
+</suite> <!-- Failed suite [MavenRodanFieldsPackage.RodanFieldsTest] -->
